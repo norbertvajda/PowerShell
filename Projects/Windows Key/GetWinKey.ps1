@@ -23,7 +23,7 @@ Function GetWinKey
   }
 
   $ProductID = (Get-ItemProperty -Path "HKLM:Software\Microsoft\Windows NT\CurrentVersion" -Name "ProductId").ProductId
-  $DigiID = ConvertTokey $DigitalIDvalue
+  $DigiID = ConvertToKey $DigitalIDvalue
   $OSInfo = (Get-WmiObject "Win32_OperatingSystem" | Select Caption).Caption
   $CSDVersion = ""
   
@@ -141,7 +141,7 @@ $FName = "Windows" + $CurrentVersion + "_Key.txt"
 
 GetWinKey
 
-Write-Host "`r`nAll the tada are in "$FName" in same folder. `r`n"
+Write-Host "`r`nAll the data are in "$FName" in same folder. `r`n"
 #echo "Exit with key press ..." 
 #$voidinput = $host.UI.RawUI.ReadKey("NoEcho, IncludeKeyDown")
 Pause
