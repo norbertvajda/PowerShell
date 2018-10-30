@@ -42,12 +42,12 @@ Function GetWinKey
   }
 
   [string]$Value = "Informations about OS: `r`n" `
-  + "Windows-Edition        : $ProductName $OsType $CSDVersion `r`n" `
-  + "Windows-Build-ID       : $CurrentBuild `r`n" `
-  + "Windows-Versions-ID    : $CurrentVersion `r`n" `
-  + "Processor-Architecture : $PROCESSOR_ARCHITECTURE `r`n" `
-  + "Produkt-ID             : $ProductID `r`n" `
-  + "Windows-ProduktKey     : $DigiID `r`n`r`n" `
+  + "Windows Edition        : $ProductName $OsType $CSDVersion `r`n" `
+  + "Windows Build ID       : $CurrentBuild `r`n" `
+  + "Windows Version ID    : $CurrentVersion `r`n" `
+  + "Processor Architecture : $PROCESSOR_ARCHITECTURE `r`n" `
+  + "Product ID             : $ProductID `r`n" `
+  + "Windows ProductKey     : $DigiID `r`n`r`n" `
   + "Registered Owner       : $RegisteredOwner `r`n" `
   + "Computername           : $USERDOMAIN `r`n"
   
